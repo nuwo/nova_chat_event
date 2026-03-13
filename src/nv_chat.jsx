@@ -227,6 +227,7 @@ export default function Nova_chat_App() {
 
 		setLoading(true);
 		setError(null);
+
 		console.log("Image file:", selectedImage);
 		console.log("Title :", title);
 		console.log("Date:", date);
@@ -305,6 +306,12 @@ export default function Nova_chat_App() {
 			//setDownloadUrl(downloadedUrl);
 		}
 		catch(e){
+			setError(e?e.message : 'request failed');
+
+
+		}
+		finally{
+			setLoading(false);
 		}
 
 
