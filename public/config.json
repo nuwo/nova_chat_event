@@ -1,0 +1,14 @@
+{
+	"CHAT_API":"https://w0k6yazkw4.execute-api.us-east-1.amazonaws.com/chatbot_nova_canvas",
+	"DEFAULT_MODEL":"nova-canvas",
+	"MODELS":[
+	{"key":"nova-micro","label":"nova micro"},
+	{"key":"nova-lite","label":"nova lite"},
+	{"key":"nova-pro","label":"nova pro"},
+	{"key":"nova-canvas","label":"nova canvas"}
+
+
+
+	]
+}
+
