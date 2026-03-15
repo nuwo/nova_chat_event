@@ -6,7 +6,7 @@ Follow style instructions and Color Rules
 Style = {Corporate | Minimal | Modern | Party}
 
 ColorRules:
-Corporate: #111111 text, white/light background, blue/purple accents
+Corporate: #111111 text, white/light background, 
 Minimal: sparse layout, neutral backgrounds
 Modern: dark/light UI with accent colors
 Party: dark background with bright accents
