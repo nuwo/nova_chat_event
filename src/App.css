@@ -46,8 +46,6 @@
 button {
   -webkit-appearance: none;
   appearance: none;
-  background-color:black;
-  color:white;
 }
 
 input,textarea,select{
