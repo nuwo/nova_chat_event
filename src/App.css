@@ -50,7 +50,7 @@ button {
   color:white;
 }
 
-input,textarea{
+input,textarea,select{
   -webkit-appearance: none;
   appearance: none;
   background-color:black;
