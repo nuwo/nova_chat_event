@@ -65,6 +65,8 @@ input,textarea{
 .chatContainer {
   position: relative;
   z-index: 1;
+ -webkit-appearance: none;
+  appearance: none;
 }
 
 
