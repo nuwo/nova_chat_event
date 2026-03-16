@@ -1,6 +1,6 @@
 import React, { useState,useRef } from 'react';
 
-export default function Event_Form({ title, setTitle,style,setStyle, location, setLocation,date,setDate,rsvp,setRSVP,otherDetails,setOtherDetails,time,setTime,selectedImage,setSelectedImage,backgroundImageGenPrompt,setBackgroundImageGenPrompt }) {
+export default function Event_Form({ title, setTitle,style,setStyle, location, setLocation,date,setDate,rsvp,setRSVP,otherDetails,setOtherDetails,time,setTime,selectedImage,setSelectedImage,backgroundImageGenPrompt,setBackgroundImageGenPrompt,}) {
 
 	/*
         const [date,setDate] = useState(new Date());

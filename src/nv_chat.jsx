@@ -23,7 +23,7 @@ export default function Nova_chat_App() {
 	// let MODELS= [];
 
 	//const [date,setDate] = useState(new Date());
-	const [date,setDate] = useState();
+	const [date,setDate] = useState('');
         const [title,setTitle] = useState("");
         const [rsvp,setRSVP] = useState("");
         const [location,setLocation] = useState("");
@@ -42,6 +42,29 @@ export default function Nova_chat_App() {
 	const styles=["Corporate" , "Minimal", "Modern", "Party"];
 
 	const [backgroundImageGenPrompt,setBackgroundImageGenPrompt]=useState("");
+
+
+        //Intial State
+	const initialState = {
+
+		date: "",
+		title : "",
+		rsvp:"",
+		location:"",
+		time:"",
+		selectedImage:null,
+		otherDetails: "",
+		generatedImage:null,
+		downloadUrl:"",
+		style:"Corporate",
+		backgroundImageGenPrompt:""
+
+
+
+
+  	}; 
+
+	const [initialFormState,setInitialFormState] = useState(initialState);
 
 
 	useEffect(()=>{
@@ -224,6 +247,11 @@ export default function Nova_chat_App() {
 		return new Blob([blobArray],{type:contentType});
 	}
 
+	const handleReset=()=>{
+		console.log("handle Reset");
+		setInitialFormState(initialFormState);
+	}
+
 	async function handleFieldsSubmit(e){
 		e.preventDefault();
 
@@ -404,9 +432,12 @@ export default function Nova_chat_App() {
 				setSelectedImage={setSelectedImage}
 				backgroundImageGenPrompt={backgroundImageGenPrompt}
 				setBackgroundImageGenPrompt={setBackgroundImageGenPrompt}
+				initialFormState={initialFormState}
+				setInitialFormState={setInitialFormState}
 				      />
 			<div className='form-button'>
-				<button type="submit">Submit Event</button>
+				<button type="submit" disabled={loading}>{loading? "Submitting Request" : "Submit" }</button>
+				{/*<button type="reset" onClick={handleReset}> Reset</button>*/}
 			</div>
 			<div className='form-Image'>
 
@@ -430,7 +461,7 @@ export default function Nova_chat_App() {
 
 
 			<div className='event-details' style={{ padding:'15px', borderRadius:'10px',color:'black' }}>
-			{title&&<p style={{fontSize:'18px',fontWeight:'bold'}}>{title}</p>}
+			{title&&<p style={{fontSize:'22px',fontWeight:'bold',fontStyle:'Clarendon'}}>{title}</p>}
 
 			{date && time && location ? 
 (<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong>Date:</strong>{`${date}`} | <strong> Time :</strong>{`${time}`}|<strong> Location:</strong>{`${location}`}</p>)
