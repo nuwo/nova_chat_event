@@ -67,6 +67,7 @@ input,textarea{
   z-index: 1;
  -webkit-appearance: none;
   appearance: none;
+  margin-top:200px;
 }
 
 
@@ -88,10 +89,6 @@ input,textarea{
   background: rgba(0,0,0,0.4);
 }
 
-.chatContainer{
-  
-  margin-top:200px;
-}
 
 .form-header{
   display:flex;
