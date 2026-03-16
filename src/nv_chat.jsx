@@ -428,9 +428,23 @@ export default function Nova_chat_App() {
 
 
 			<div className='event-details' style={{ padding:'15px', borderRadius:'10px',color:'black' }}>
-			<p style={{fontSize:'18px',fontWeight:'bold'}}>{title}</p>
-			<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong>Date:</strong>{`${date}`} | <strong> Time :</strong>{`${time}`}|<strong> Location:</strong>{`${location}`}</p>
-			<p style={{fontSize:'12px'}}><strong >RSVP:</strong>{`${rsvp}`}</p>
+			{title&&<p style={{fontSize:'18px',fontWeight:'bold'}}>{title}</p>}
+
+			{date && time && location ? 
+(<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong>Date:</strong>{`${date}`} | <strong> Time :</strong>{`${time}`}|<strong> Location:</strong>{`${location}`}</p>)
+ : date && time ? 
+(<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong>Date:</strong>{`${date}`} | <strong> Time :</strong>{`${time}`}</p>)
+ : data && location ?
+(<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong>Date:</strong>{`${date}`} |<strong> Location:</strong>{`${location}`}</p> )
+ :time && location?
+(<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong> Time :</strong>{`${time}`}|<strong> Location:</strong>{`${location}`}</p> )
+: date?(<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong>Date:</strong>{`${date}`}</p>)
+:time? (<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong> Time :</strong>{`${time}`}</p> )
+: location?(<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong> Location:</strong>{`${location}`}</p>) :
+ null}
+
+
+			{rsvp && <p style={{fontSize:'12px'}}><strong >RSVP:</strong>{`${rsvp}`}</p>}
 			{otherDetails && <p style={{fontSize:'12px'}}><strong>Details:</strong> {`${otherDetails}`}</p>}
 		        	
 			</div>

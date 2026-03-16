@@ -48,11 +48,9 @@ button {
   appearance: none;
 }
 
-input,textarea,select{
+input,textarea{
   -webkit-appearance: none;
   appearance: none;
-  background-color:black;
-  color:white;
 }
 
 .videoContainer {
