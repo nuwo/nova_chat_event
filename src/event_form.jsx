@@ -131,7 +131,7 @@ export default function Event_Form({ title, setTitle,style,setStyle, location, s
                                         value={otherDetails}
                                         onChange={(e) => setOtherDetails(e.target.value)}
                                         maxlength={50}
-                                        placeholder="Enter other details eg. notes,speakers.Keep your input to a max 50 characters"
+                                        placeholder="Enter other details eg. notes,speakers.Input to a max 50 characters"
                                         rows={7}
                                         style={{
                                         width: '100%',
@@ -176,7 +176,7 @@ export default function Event_Form({ title, setTitle,style,setStyle, location, s
                                         value={backgroundImageGenPrompt}
                                         onChange={(e) => setBackgroundImageGenPrompt(e.target.value)}
  					maxlength={500}
-                                        placeholder="Enter prompt to generate a background Image.Ask AWS a question .Keep your prompt to a maximum of 500 characters"
+                                        placeholder="Enter prompt to generate a background Image.Ask AWS Canvas to generate image .Input a maximum of 500 characters "
                                         rows={7}
                                         style={{
                                         width: '100%',
