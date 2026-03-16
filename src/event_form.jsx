@@ -97,7 +97,7 @@ export default function Event_Form({ title, setTitle,style,setStyle, location, s
 		      />
 		 </div>
 		<div className= "form-group">
-			<label htmlFor="alarm-time">Alarm clock:</label>
+			<label htmlFor="alarm-time">Time:</label>
 			<input 	
 				id="alarm-time"
 				type="time"

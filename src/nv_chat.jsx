@@ -22,11 +22,13 @@ export default function Nova_chat_App() {
 	// let DEFAULT_MODEL="nova-micro"; 
 	// let MODELS= [];
 
-	const [date,setDate] = useState(new Date());
+	//const [date,setDate] = useState(new Date());
+	const [date,setDate] = useState();
         const [title,setTitle] = useState("");
         const [rsvp,setRSVP] = useState("");
         const [location,setLocation] = useState("");
-        const [time,setTime] = useState('7:30');
+        //const [time,setTime] = useState('7:30');
+        const [time,setTime] = useState('');
         const [selectedImage,setSelectedImage]=useState(null);
         const [otherDetails,setOtherDetails]=useState("");
 
@@ -419,7 +421,7 @@ export default function Nova_chat_App() {
                                                                                 backgroundPosition: 'center',
 										backgroundRepeat: 'no-repeat',
 										width: '100%',
-                                                                                height: '100vh',
+                                                                                height: '200vh',
                                                                                 display: 'flex',
                                                                                 alignItem: 'center',
                                                                                 justifyContent:'center',
@@ -434,7 +436,7 @@ export default function Nova_chat_App() {
 (<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong>Date:</strong>{`${date}`} | <strong> Time :</strong>{`${time}`}|<strong> Location:</strong>{`${location}`}</p>)
  : date && time ? 
 (<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong>Date:</strong>{`${date}`} | <strong> Time :</strong>{`${time}`}</p>)
- : data && location ?
+ : date && location ?
 (<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong>Date:</strong>{`${date}`} |<strong> Location:</strong>{`${location}`}</p> )
  :time && location?
 (<p style = {{fontSize:'12px',fontStyle:'italic'}}><strong> Time :</strong>{`${time}`}|<strong> Location:</strong>{`${location}`}</p> )

@@ -1,6 +1,6 @@
 export const novaStyleInstructions = `
 
-You are a event generator ASSISTANT,given the details of Title,Date ,Time,Location,RSVP and Image
+You are a image generator ASSISTANT
 Follow style instructions and Color Rules 
 
 Style = {Corporate | Minimal | Modern | Party}
