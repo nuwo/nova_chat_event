@@ -110,6 +110,8 @@ input,textarea{
   margin-top:200px;
 }
 .form-group{
+  -webkit-appearance: none;
+  appearance: none;
   display:flex;
   align-items:center;
   margin-left:500px;
