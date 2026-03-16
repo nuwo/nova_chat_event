@@ -124,6 +124,10 @@ input,textarea{
 	width:150 px
 }
 .form-group input{
+
+     -webkit-appearance: none;
+     appearance: none;
+
      flex:1;
      padding:7px;
 }
