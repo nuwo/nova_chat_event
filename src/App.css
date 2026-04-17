@@ -46,6 +46,7 @@
 }
 .clear-styles {
    -webkit-appearance: none;
+   appearance:none;
 }
 
 html {
