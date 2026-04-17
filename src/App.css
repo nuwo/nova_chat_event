@@ -44,6 +44,9 @@
 .read-the-docs {
   color: #888;
 }
+.clear-styles {
+   -webkit-appearance: none;
+}
 
 html {
   -webkit-text-size-adjust: none;
