@@ -58,6 +58,7 @@ html {
 }
 
 button[type="submit"]{
+  border: 10px solid red !important;
   -webkit-appearance: none !important;
   appearance: none !important;
 }
