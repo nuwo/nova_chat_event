@@ -57,7 +57,7 @@ html {
 
 }
 
-button [type="submit"]{
+button[type="submit"]{
   -webkit-appearance: none;
   appearance: none;
 }
