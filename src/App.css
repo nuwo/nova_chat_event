@@ -58,8 +58,8 @@ html {
 }
 
 button[type="submit"]{
-  -webkit-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+  appearance: none !important;
 }
 
 input,textarea{
