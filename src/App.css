@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 
@@ -58,14 +58,26 @@ html {
 }
 
 button[type="submit"]{
-  border: 10px solid red !important;
+ /* border: 10px solid red !important;*/
   -webkit-appearance: none !important;
   appearance: none !important;
-}
 
+ /* ios-specific*/
+ /*background-image: none !important*/;
+ opacity:1;
+ 
+ color:blue;
+}
+/*
+button[type="submit"]:disabled {
+ background-color: black !important;
+  opacity: 0.7; 
+}
+*/
 input,textarea{
-  -webkit-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  color:black;
 }
 
 .videoContainer {
